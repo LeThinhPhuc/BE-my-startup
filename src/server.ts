@@ -8,7 +8,7 @@ import userRouter from "./routes/userRouter";
 import connectToDB from "./config/db";
 
 const app = express();
-const PORT = 8001;
+const PORT = process.env.PORT || 8081;
 
 // Connect mongodb
 connectToDB();
